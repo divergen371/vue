@@ -1,7 +1,6 @@
 <template>
   <Title />
-  <Form />
-  <button @click="getWeather">getWeatherのテスト</button>
+  <Form @submit-form="getWeather"/>
 </template>
 
 
