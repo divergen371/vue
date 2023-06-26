@@ -12,9 +12,9 @@
 <script setup>
 import { reactive } from "vue";
 import axios from "axios"
-import Title from './Title.vue';
-import Form from './Form.vue';
-import Results from "./Results.vue";
+import Title from './components/Title.vue';
+import Form from './components/Form.vue';
+import Results from "./components/Results.vue";
 import "./assets/base.css"
 
 const results = reactive({
