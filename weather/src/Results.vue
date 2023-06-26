@@ -1,8 +1,8 @@
 <template>
-    <div>{{ results.country }}</div>
-    <div>{{ results.cityName }}</div>
-    <div>{{ results.temperature }}</div>
-    <div v-if="results.icon">
+    <div class="results-country" v-if="results.country">{{ results.country }}</div>
+    <div class="results-cityname" v-if="results.cityName">{{ results.cityName }}</div>
+    <div class="results-temp" v-if="results.temperature">{{ results.temperature }}</div>
+    <div class="results-condition" v-if="results.icon">
         <img :src="results.icon" alt="icon">
         <span>{{ results.conditionText }}</span>
     </div>

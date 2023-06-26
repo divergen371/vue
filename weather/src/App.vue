@@ -1,7 +1,11 @@
 <template>
-  <Title />
-  <Form @submit-form="getWeather" />
-  <Results :results="results" />
+  <div class="wrapper">
+    <div class="container">
+      <Title />
+      <Form @submit-form="getWeather" />
+      <Results :results="results" />
+    </div>
+  </div>
 </template>
 
 
@@ -11,6 +15,7 @@ import axios from "axios"
 import Title from './Title.vue';
 import Form from './Form.vue';
 import Results from "./Results.vue";
+import "./assets/base.css"
 
 const results = reactive({
   country: "",
